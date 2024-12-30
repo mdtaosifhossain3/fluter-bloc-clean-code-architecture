@@ -18,17 +18,7 @@ class _SplashViewState extends State<SplashView> {
   Widget build(BuildContext context) {
 
     return Scaffold(body: SafeArea(
-      child: Center(child: Column(
-
-        children: [
-          LoadingWidget(),
-          RoundButton(title: "Login", onClick: (){}),
-          TextButton(onPressed: (){
-            Navigator.pushNamed(context, RouteName.internetExceptionScreen);
-          }, child: Text("Click Here")),
-
-        ],
-      ),),
+      child: Center(child: Text("Splash Screen"),),
     ),);
   }
 }
